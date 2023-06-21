@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="survey_form.css">
+        <title>Important Questions</title>
+    </head>
+
+    <body>
+        <div class="title">
+            <h1 id="title">Questions About Life, the Universe, and Everything</h1>
+            <p id="description">Please fill out this very important survey form.</p>
+        </div>
+
+        <br>
+
+        <form id="survey-form" method="post">
+
+            <fieldset>
+                <legend>Personal information (boring but necessary)</legend>
+                <label for="name" id="name-label"> Name <input type="text" id="name" class="block" placeholder="Enter your name" required>
+                </label>
+                <label for="email" id="email-label">Email <input type="email" id="email" class="block" placeholder="Enter your email" required> 
+                </label>
+                <label for="age" id="number-label">Age <input type="number" id="number" class="block" placeholder="Age" min="13" max="120">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Important Animal Questions</legend>
+                <div class="animals">
+                    <br>
+                    <label for="dropdown">What is your ideal pet?</label>
+                    <select id="dropdown" name="dropdown">
+                        <option value="">(Select one)</option>
+                        <option value="1">A nice good dog</option>
+                        <option value="2">A cat (neutered)</option>
+                        <option value="3">A cat (not neutered; yes, I am insane)</option>
+                        <option value="4">A stinky ferret boy</option>
+                        <option value="5">Parrot or other bird</option>
+                        <option value="6">Snake or other reptile</option>
+                        <option value="7">I don't want pets</option>
+                        <option value="8">Other</option>
+                    </select>
+                    
+
+                    <p class="hugo-ruska">Who is better?</p>
+                    <label for="hugo"><input type="radio" name="hugo-ruska" id="hugo" value="hugo"> Hugo</label>
+                    <label for="ruska"><input type="radio" name="hugo-ruska" id="ruska" value="ruska"> Ruska</label>
+                    <label for="both"><input type="radio" name="hugo-ruska" id="both" value="both"> I love both my children equally</label><br>
+            
+                    <label for="linda">What are you thoughts on Linda?
+                        <textarea id="linda" rows="3" cols="30" placeholder="I am impressed by her parenting skills..."></textarea>
+                    </label>                
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Important Wedding Question</legend>
+                <div class="wedding">
+                    <p>Select all you think are appropriate to bring to a wedding: </p>
+                    <label for="check-one"><input type="checkbox" id="check-one" name="checkbox" value="1"> A plus one</label>
+                    <label for="check-two"><input type="checkbox" id="check-two" name="checkbox" value="2"> A plus one (it's the bride's ex)</label>
+                    <label for="check-three"><input type="checkbox" id="check-three" name="checkbox" value="2"> A volleyball</label>
+                    <label for="check-four"><input type="checkbox" id="check-four" name="checkbox" value="2"> A bottle of vodka (to share)</label>
+                    <label for="check-five"><input type="checkbox" id="check-five" name="checkbox" value="2"> A bottle of vodka (to drink yourself)</label>
+                    <label for="check-six"><input type="checkbox" id="check-six" name="checkbox" value="2"> A feral but friendly dog</label>
+                    <label for="check-seven"><input type="checkbox" id="check-seven" name="checkbox" value="2"> A small bag of glitter to use instead of rice</label>
+                    <label for="check-eight"><input type="checkbox" id="check-eight" name="checkbox" value="2"> An envelope with cash for the bride and groom</label>
+                    <label for="check-nine"><input type="checkbox" id="check-nine" name="checkbox" value="2"> A change of shoes</label>
+                    <label for="check-ten"><input type="checkbox" id="check-ten" name="checkbox" value="2"> A change of shoes (they are four-year-old Quechuas)</label>
+                </div>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
